@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+
+    "name": "2048 Bot",
+    "description": "This extension play alone 2048 game",
+    "version": "1.0",
+
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+
+    "permissions": [
+        "http://localhost:3000/"
+    ],
+
+    "background": {
+        "scripts": []
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://gabrielecirulli.github.io/*"],
+            "js": ["content.js"]
+        }
+    ],
+
+    "web_accessible_resources": ["game.js","config.js"]
+}
