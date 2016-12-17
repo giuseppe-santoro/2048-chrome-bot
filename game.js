@@ -73,8 +73,8 @@ function getGrid(dom) {
         for (var c = 1; c < 5; c++) {
             var cell = 0;
             try {
-                cell = dom
-                    .getElementsByClassName('tile-position-' + c + '-' + r)[0]
+                var potentialCells = dom.getElementsByClassName('tile-position-' + c + '-' + r);
+                cell = potentialCells[potentialCells.length-1]
                     .getElementsByClassName('tile-inner')[0].innerHTML;
             } catch (e) {
             }
