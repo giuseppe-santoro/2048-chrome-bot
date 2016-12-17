@@ -116,7 +116,7 @@ Poi per compilare, eseguire `mvn install` e per avviare il server eseguire `mvn 
 Di sequito i file di progetto.
 
 Pom.xml
-```
+```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
@@ -202,7 +202,7 @@ Pom.xml
 ```
 
 Main.java
-```
+```java
 package com.example;
 
 import org.glassfish.grizzly.http.server.HttpServer;
@@ -252,7 +252,7 @@ public class Main {
 ```
 
 CrossDomainFilter.java
-```
+```java
 package com.example;
 
 import javax.ws.rs.container.ContainerRequestContext;
@@ -270,7 +270,7 @@ public class CrossDomainFilter implements ContainerResponseFilter {
 ```
 
 MyResourse.java
-```
+```java
 package com.example;
 
 import javax.ws.rs.*;
